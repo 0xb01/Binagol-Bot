@@ -1,4 +1,5 @@
 exports.run = (client, message, args) => {
+    // Moderator, Developer are from my server role. If you have a different role name for mods or etc, edit this...
     if (message.member.roles.cache.some(role => role.name === 'Moderator' || role.name === 'Developer' || role.name === "OWNER")) {
         const usr = message.mentions.users.first()
         var res = args.slice(1).join(' ');
